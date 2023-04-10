@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Map</title>
+</head>
+
+<body>
+    <script>
+        const nums = [1, 2, 3, 4, 5]
+        console.log(nums)
+
+        const resultado = nums.map(function (e) {
+            return e * 2
+        })
+        // console.log(resultado)
+
+        const soma5 = elemento => elemento + 5
+        const triplo = elemento => elemento * 3
+        const paraReal = elemento => `R$ ${parseFloat(elemento).toFixed(2).replace('.', ',')}`
+
+        const resul = nums.map(soma5).map(triplo).map(paraReal)
+        console.log(resul)
+    </script>
+</body>
+
+</html>
